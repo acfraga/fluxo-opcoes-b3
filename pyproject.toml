@@ -9,7 +9,7 @@ description = "Fluxo e posições em aberto de opções de ações a partir dos 
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
-authors = [{ name = "[Adriano Canquerini Fraga]" }]
+authors = [{ name = "Adriano Canquerini Fraga" }]
 requires-python = ">=3.10"
 dependencies = ["pandas>=2.0", "numpy>=1.24", "openpyxl>=3.1"]
 keywords = ["B3", "opções", "derivativos", "posições em aberto", "mercado brasileiro"]
