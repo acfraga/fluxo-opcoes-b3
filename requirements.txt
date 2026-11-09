@@ -1,0 +1,6 @@
+pandas>=2.0
+numpy>=1.24
+openpyxl>=3.1
+scipy>=1.10   # opcional: CDF normal mais rápida
+pyield>=0.63  # opcional: curva do DI1 do dia (CURVA_DI = "pyield")
+jupyter       # para o notebook

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fluxo-opcoes-b3"
+dynamic = ["version"]
+description = "Fluxo e posições em aberto de opções de ações a partir dos arquivos públicos do Boletim Diário do Mercado da B3"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "[Adriano Canquerini Fraga]" }]
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.0", "numpy>=1.24", "openpyxl>=3.1"]
+keywords = ["B3", "opções", "derivativos", "posições em aberto", "mercado brasileiro"]
+
+[project.optional-dependencies]
+di = ["pyield>=0.63"]          # curva do DI1 do dia
+rapido = ["scipy>=1.10"]       # CDF normal mais rápida
+notebook = ["jupyter"]
+
+[tool.setuptools.packages.find]
+include = ["fluxo_opcoes*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "fluxo_opcoes.__version__" }

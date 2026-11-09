@@ -1,0 +1,24 @@
+# Dados da B3 e resultados com dados reais: NÃO versionar
+dados/
+dados_sinteticos/
+historico/
+historico_sintetico/
+painel_*.xlsx
+!painel_exemplo_SINTETICO.xlsx
+*.csv
+*.zip
+
+# Python e Jupyter
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
