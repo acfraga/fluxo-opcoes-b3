@@ -1,0 +1,26 @@
+name: testes
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  regressao:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - python: "3.10"
+            pandas: "pandas==2.2.3"
+          - python: "3.12"
+            pandas: "pandas"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Instalar
+        run: pip install "${{ matrix.pandas }}" .
+      - name: 13 eventos plantados no pregão sintético
+        run: python teste_compat.py
