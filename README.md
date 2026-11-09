@@ -1,3 +1,5 @@
+  ![testes](https://github.com/acfraga/fluxo-opcoes-b3/actions/workflows/testes.yml/badge.svg)
+  
 # fluxo_opcoes — fluxo e posições em opções de ações (B3)
 
 Protótipo em Python que lê o **negócio a negócio** e as **posições em aberto** do Boletim Diário do Mercado e destaca estruturas, blocos grandes e mudanças de posicionamento em opções de ações.
